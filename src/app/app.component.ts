@@ -40,6 +40,7 @@ interface ExampleFlatNode {
   expandable: boolean;
   name: string;
   level: number;
+  selected?: boolean;
 }
 
 @Component({
@@ -69,4 +70,8 @@ export class AppComponent {
   }
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+
+  checked(node: ExampleFlatNode): void {
+    node.selected = !node.selected;
+  }
 }

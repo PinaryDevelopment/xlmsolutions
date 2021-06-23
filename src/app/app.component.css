@@ -11,3 +11,8 @@ mat-tree-node {
   max-width: 50px;
   width: 50px;
 }
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
