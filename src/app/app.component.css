@@ -1,0 +1,13 @@
+mat-tree-node {
+  border-bottom: 1px solid grey;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row>span {
+  max-width: 50px;
+  width: 50px;
+}
